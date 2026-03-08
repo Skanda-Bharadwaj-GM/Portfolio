@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brighter navy + white palette */
+  --surface: #02091f;
+  --card: #0b1f3b;
+  --accent: #60a5fa;
+  --text: #f5f8ff;
+  --muted: #94a3b8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(148, 163, 184, 0.3) 0, transparent 45%),
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.4) 0, transparent 55%),
+    var(--surface);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Subtle grid background */
+.bg-grid {
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #f9fbff 0%, #60a5fa 40%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
