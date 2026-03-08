@@ -119,13 +119,6 @@ export default function ProjectsPage() {
           </svg>
         </a>
       </div>
-      <p className="text-xs text-zinc-500 mt-4">
-        Tip: add images named <code className="bg-white/5 px-1 rounded">justice-lens.jpg</code>,{' '}
-        <code className="bg-white/5 px-1 rounded">pressure-gauge.jpg</code>,{' '}
-        <code className="bg-white/5 px-1 rounded">sales-forecast.jpg</code>, and{' '}
-        <code className="bg-white/5 px-1 rounded">indic-captioning.jpg</code> inside the{' '}
-        <code className="bg-white/5 px-1 rounded">public/projects</code> folder to match these cards.
-      </p>
     </div>
   )
 }
